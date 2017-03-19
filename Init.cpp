@@ -8,10 +8,11 @@
 
 using namespace std;
 
-Init::Init(int _pop_size, string _target) {
+Init::Init(int _pop_size, string _target, int _mutation_rate) {
     srand(time(NULL));
     this->pop_size = _pop_size;
     this->target = _target;
+    this->mutation_rate = _mutation_rate;
     this->population = Population(pop_size, mutation_rate, target);
 }
 

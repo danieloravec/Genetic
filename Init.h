@@ -19,7 +19,7 @@ private:
     string target; // Target string
     Population population;
 public:
-    Init(int _pop_size, string _target);
+    Init(int _pop_size, string _target, int _mutation_rate);
     void evolve(); // To start evolution process
 };
 
